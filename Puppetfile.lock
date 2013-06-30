@@ -49,6 +49,11 @@ GITHUBTARBALL
     ruby (4.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sublime_text_2
+  specs:
+    sublime_text_2 (1.1.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -76,5 +81,6 @@ DEPENDENCIES
   repository (= 2.0.2)
   ruby (= 4.1.0)
   stdlib (= 4.0.2)
+  sublime_text_2 (= 1.1.1)
   sudo (= 1.0.0)
 
