@@ -6,4 +6,7 @@ class people::felho::applications {
   sublime_text_2::package {'Emmet':
     source => 'sergeche/emmet-sublime'
   }
+
+  #iTerm2
+  include iterm2::stable
 }
