@@ -7,6 +7,9 @@ class people::felho::applications {
     source => 'sergeche/emmet-sublime'
   }
 
-  #iTerm2
+  # iTerm2
   include iterm2::stable
+
+  # Chrome
+  include chrome
 }
