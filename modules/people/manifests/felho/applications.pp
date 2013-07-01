@@ -19,7 +19,7 @@ class people::felho::applications {
      ensure  => 'link',
      target  => "/Users/felho/Dropbox/Skype/",
      force   => true,
-     require => Package[Dropbox],
+     require => [Package[Dropbox],Package[Skype]],
   }  
 
   # TeamViewer
