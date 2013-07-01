@@ -15,6 +15,12 @@ class people::felho::applications {
 
   # Skype
   include skype
+  file {"/Users/felho/Library/Application Support/Skype":
+     ensure  => 'link',
+     target  => "/Users/felho/Dropbox/Skype/",
+     force   => true,
+     require => Package[Dropbox],
+  }  
 
   # TeamViewer
   include teamviewer
