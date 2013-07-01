@@ -12,4 +12,7 @@ class people::felho::applications {
 
   # Chrome
   include chrome
+
+  #Skype
+  include skype
 }
