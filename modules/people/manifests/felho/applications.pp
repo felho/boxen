@@ -13,6 +13,12 @@ class people::felho::applications {
   # Chrome
   include chrome
 
-  #Skype
+  # Skype
   include skype
+
+  # TeamViewer
+  include teamviewer
+
+  # Dropbox
+  include dropbox
 }
