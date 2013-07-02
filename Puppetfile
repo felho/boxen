@@ -40,4 +40,4 @@ github "chrome", "1.1.0"
 github "skype", "1.0.3"
 github "teamviewer", "1.0.1"
 github "dropbox", "1.1.1"
-
+github "clipmenu", "1.0.0"
