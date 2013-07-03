@@ -88,4 +88,7 @@ class people::felho::applications {
   }
 
   package{ 'mc': }
+
+  # Java
+  include java
 }
