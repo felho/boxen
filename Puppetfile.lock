@@ -14,11 +14,6 @@ GITHUBTARBALL
     clipmenu (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-divvy
-  specs:
-    divvy (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -112,7 +107,6 @@ DEPENDENCIES
   boxen (= 2.1.0)
   chrome (= 1.1.0)
   clipmenu (= 1.0.0)
-  divvy (= 1.0.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
   gcc (= 1.0.0)

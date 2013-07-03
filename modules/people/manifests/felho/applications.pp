@@ -81,7 +81,6 @@ class people::felho::applications {
   }  
 
   # Divvy
-  include divvy
   boxen::osx_defaults {'Divvy useGlobalHotkey':
     domain  => 'com.mizage.Divvy',
     key   => 'useGlobalHotkey',
