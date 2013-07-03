@@ -86,4 +86,6 @@ class people::felho::applications {
     key   => 'useGlobalHotkey',
     value => 1,
   }
+
+  package{ 'mc': }
 }
