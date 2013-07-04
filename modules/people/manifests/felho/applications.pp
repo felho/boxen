@@ -91,4 +91,7 @@ class people::felho::applications {
 
   # Java
   include java
+
+  # Firefox
+  include firefox
 }
