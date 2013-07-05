@@ -1,0 +1,25 @@
+class people::felho::application_settings::clipmenu {
+  boxen::osx_defaults {'Clipmenu maxHistorySize':
+    domain  => 'com.naotaka.ClipMenu',
+    key   => 'maxHistorySize',
+    value => 300,
+  }
+
+  boxen::osx_defaults {'Clipmenu numberOfItemsPlaceInline':
+    domain  => 'com.naotaka.ClipMenu',
+    key   => 'numberOfItemsPlaceInline',
+    value => 20,
+  }  
+
+  boxen::osx_defaults {'Clipmenu numberOfItemsPlaceInsideFolder':
+    domain  => 'com.naotaka.ClipMenu',
+    key   => 'numberOfItemsPlaceInsideFolder',
+    value => 20,
+  }  
+
+  boxen::osx_defaults {'Clipmenu maxMenuItemTitleLength':
+    domain  => 'com.naotaka.ClipMenu',
+    key   => 'maxMenuItemTitleLength',
+    value => 25,
+  }
+}
