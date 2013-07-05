@@ -109,6 +109,11 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
+  remote: felho/puppet-osx
+  specs:
+    osx (1.4.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.0.2)
@@ -129,6 +134,7 @@ DEPENDENCIES
   java (= 1.1.2)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
+  osx (= 1.4.0)
   repository (= 2.0.2)
   ruby (= 4.1.0)
   skype (= 1.0.3)
