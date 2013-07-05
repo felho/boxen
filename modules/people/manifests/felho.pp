@@ -1,4 +1,5 @@
 class people::felho {
+  include people::felho::osx_settings
   include people::felho::applications
   include people::felho::application_settings
   include people::felho::dotfiles
