@@ -1,12 +1,12 @@
 class people::felho::application_settings::divvy {
-  boxen::osx_defaults {'Divvy useGlobalHotkey':
+  boxen::osx_defaults { 'Divvy useGlobalHotkey':
     user   => $::luser,
     domain => 'com.mizage.Divvy',
     key    => 'useGlobalHotkey',
     value  => 1,
   }
 
-  people::felho::osx_defaults_extended {'Divvy globalHotkey':
+  people::felho::osx_defaults_extended { 'Divvy globalHotkey':
     user   => $::luser,
     domain => 'com.mizage.Divvy',
     key    => 'globalHotkey',
@@ -14,7 +14,7 @@ class people::felho::application_settings::divvy {
     value  => { 'keyCode' => 13, 'modifiers' => 2304 },
   }  
 
-  boxen::osx_defaults {'Divvy shortcuts':
+  boxen::osx_defaults { 'Divvy shortcuts':
     user   => $::luser,
     domain => 'com.mizage.Divvy',
     key    => 'shortcuts',

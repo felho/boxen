@@ -1,3 +1,3 @@
- class people::felho::osx_settings::trackpad {
- 
- }
+  class people::felho::osx_settings::trackpad {
+
+  }
