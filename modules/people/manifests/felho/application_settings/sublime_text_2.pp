@@ -77,4 +77,20 @@ class people::felho::application_settings::sublime_text_2 {
   sublime_text_2::package {'SublimePackageControl':
     source => 'wbond/sublime_package_control'
   }
+  
+  sublime_text_2::package {'SodaTheme':
+    source => 'buymeasoda/soda-theme'
+  }
+  
+  sublime_text_2::package {'SublimeAllAutocomplete':
+    source => 'alienhard/SublimeAllAutocomplete'
+  }
+  
+  sublime_text_2::package {'TrailingSpaces':
+    source => 'SublimeText/TrailingSpaces'
+  }
+  
+  sublime_text_2::package {'GitGutter':
+    source => 'jisaacks/GitGutter'
+  }
 }
