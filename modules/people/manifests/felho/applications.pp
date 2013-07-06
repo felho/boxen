@@ -11,4 +11,6 @@ class people::felho::applications {
   include transmission
   include java
   include firefox
+  include mplayerx
+  include vlc
 }
