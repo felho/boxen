@@ -5,4 +5,5 @@ class people::felho::application_settings {
   include people::felho::application_settings::transmission
   include people::felho::application_settings::divvy
   include people::felho::application_settings::dash
+  include people::felho::application_settings::mplayerx
 }
