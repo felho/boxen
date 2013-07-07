@@ -2,7 +2,7 @@ class people::felho::application_settings::sublime_text_2 {
   sublime_text_2::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
   }
-  
+
   file { "/Users/${::luser}/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings":
     content => template('people/sublime_text_2-Base File.sublime-settings.erb'),
     force   => true,
@@ -33,7 +33,7 @@ class people::felho::application_settings::sublime_text_2 {
   sublime_text_2::package { 'BracketHighlighter':
     source => 'facelessuser/BracketHighlighter'
   }
-  
+
   sublime_text_2::package { 'DocBlock':
     source => 'spadgos/sublime-jsdocs'
   }
@@ -45,52 +45,56 @@ class people::felho::application_settings::sublime_text_2 {
   sublime_text_2::package { 'SublimeLinter':
     source => 'SublimeLinter/SublimeLinter'
   }
-  
+
   sublime_text_2::package { 'SublimeAlignment':
     source => 'wbond/sublime_alignment'
   }
-  
+
   sublime_text_2::package { 'SublimeCodeIntel':
     source => 'SublimeCodeIntel/SublimeCodeIntel'
   }
-  
+
   sublime_text_2::package { 'Gist':
     source => 'condemil/Gist'
   }
-  
+
   sublime_text_2::package { 'GotoDocumentation':
     source => 'kemayo/sublime-text-2-goto-documentation'
   }
-  
+
   sublime_text_2::package { 'SideBarEnhancements':
     source => 'titoBouzout/SideBarEnhancements'
   }
-  
+
   sublime_text_2::package { 'IndentGuides':
     source => 'SublimeText/IndentGuides'
   }
-  
+
   sublime_text_2::package { 'SublimeQuickFileCreator':
     source => 'noklesta/SublimeQuickFileCreator'
   }
-  
+
   sublime_text_2::package { 'SublimePackageControl':
     source => 'wbond/sublime_package_control'
   }
-  
+
   sublime_text_2::package { 'SodaTheme':
     source => 'buymeasoda/soda-theme'
   }
-  
+
   sublime_text_2::package { 'SublimeAllAutocomplete':
     source => 'alienhard/SublimeAllAutocomplete'
   }
-  
+
   sublime_text_2::package { 'TrailingSpaces':
     source => 'SublimeText/TrailingSpaces'
   }
-  
+
   sublime_text_2::package { 'GitGutter':
     source => 'jisaacks/GitGutter'
+  }
+
+  sublime_text_2::package { 'SyncedSideBar':
+    source => 'sobstel/SyncedSideBar'
   }
 }
