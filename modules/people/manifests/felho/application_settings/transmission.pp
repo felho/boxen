@@ -4,5 +4,5 @@ class people::felho::application_settings::transmission {
     target  => "/Users/${::luser}/Dropbox/appconfig/Transmission/",
     force   => true,
     require => [ Package['Dropbox'], Package['transmission'] ],
-  }  
+  }
 }

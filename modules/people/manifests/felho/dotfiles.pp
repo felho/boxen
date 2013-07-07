@@ -11,12 +11,12 @@ class people::felho::dotfiles {
      target  => "/Users/${::luser}/Dropbox/config/.alias",
      force   => true,
      require => Package['Dropbox'],
-  }  
+  }
 
   file { "/Users/${::luser}/.bash_history":
      ensure  => 'link',
      target  => "/Users/${::luser}/Dropbox/config/.bash_history",
      force   => true,
      require => Package['Dropbox'],
-  }  
+  }
 }

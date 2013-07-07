@@ -12,7 +12,7 @@ class people::felho::application_settings::divvy {
     key    => 'globalHotkey',
     type   => 'dict',
     value  => { 'keyCode' => 13, 'modifiers' => 2304 },
-  }  
+  }
 
   boxen::osx_defaults { 'Divvy shortcuts':
     user   => $::luser,

@@ -11,14 +11,14 @@ class people::felho::application_settings::clipmenu {
     domain => 'com.naotaka.ClipMenu',
     key    => 'numberOfItemsPlaceInline',
     value  => 20,
-  }  
+  }
 
   boxen::osx_defaults { 'Clipmenu numberOfItemsPlaceInsideFolder':
     user   => $::luser,
     domain => 'com.naotaka.ClipMenu',
     key    => 'numberOfItemsPlaceInsideFolder',
     value  => 20,
-  }  
+  }
 
   boxen::osx_defaults { 'Clipmenu maxMenuItemTitleLength':
     user   => $::luser,

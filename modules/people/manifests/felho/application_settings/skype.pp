@@ -4,5 +4,5 @@ class people::felho::application_settings::skype {
     target  => "/Users/${::luser}/Dropbox/Skype/",
     force   => true,
     require => [ Package['Dropbox'], Package['Skype'] ],
-  }  	
+  }
 }

@@ -4,5 +4,5 @@ class people::felho::application_settings::dash {
     target  => "/Users/${::luser}/Dropbox/appconfig/Dash/library.dash",
     force   => true,
     require => Package['Dropbox'],
-  }   
+  }
 }
