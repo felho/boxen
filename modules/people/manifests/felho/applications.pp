@@ -13,4 +13,5 @@ class people::felho::applications {
   include firefox
   include mplayerx
   include vlc
+  include adobe_reader
 }
