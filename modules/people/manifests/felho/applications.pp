@@ -1,6 +1,4 @@
 class people::felho::applications {
-  notify { 'class people::felho::applications declared': }
-
   include sublime_text_2
   include iterm2::stable
   include chrome
