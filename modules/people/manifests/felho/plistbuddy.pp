@@ -1,15 +1,24 @@
 define people::felho::plistbuddy(
   $plist           = undef,
+  $domain          = undef,
   $property        = undef,
+  $type            = 'string',
   $value           = undef,
   $preferences_dir = "/Users/${::luser}/Library/Preferences/",
   $buddy_path      = '/usr/libexec/PlistBuddy'
 ) {
-  notify { "[[ `$buddy_path -c \"Print :${property}\" ${preferences_dir}${plist}` == ${value} ]] || exit 1": }
+  $plist_path = $domain ? {
+    undef   => "${preferences_dir}${plist}",
+    default => "${preferences_dir}${domain}.plist"
+  }
+  $cmd_type = $type ? {
+    'int'   => 'integer',
+    default => $type
+  }
 
-  exec { "${preferences_dir}${plist}-${property}-${value}":
-    command  => "$buddy_path -c \"Set :${property} ${value}\" ${preferences_dir}${plist}",
+  exec { "Set ${plist_path}-${property}-${cmd_type}-${value}":
+    command  => "$buddy_path -c \"Add :${property} ${cmd_type} ${value}\" ${plist_path}",
     provider => shell,
-    onlyif   => "[[ `$buddy_path -c \"Print :${property}\" ${preferences_dir}${plist}` != ${value} ]] || exit 1",
+    onlyif   => "[[ `$buddy_path -c \"Print :${property}\" ${plist_path}` != ${value} ]] || exit 1",
   }
 }
