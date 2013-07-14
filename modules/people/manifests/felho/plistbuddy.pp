@@ -25,7 +25,6 @@ define people::felho::plistbuddy(
   exec { "Set ${plist_path}-${property}-${cmd_type}-${value}":
     command  => "$buddy_path -c \"Add :${property} ${cmd_type} ${value}\" ${plist_path}",
     provider => shell,
-    onlyif   => "[[ `$buddy_path -c \"Print :${property}\" ${plist_path}` != ${value} ]] || exit 1",
     require  => Exec[ "Delete ${plist_path}-${property}" ],
   }
 }
