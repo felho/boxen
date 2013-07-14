@@ -17,13 +17,13 @@ define people::felho::plistbuddy(
   }
 
   exec { "Delete ${plist_path}-${property}":
-    command  => "$buddy_path -c \"Delete :${property}\" ${plist_path}",
+    command  => "$buddy_path -c \"Delete \\\":${property}\\\"\" ${plist_path}",
     provider => shell,
-    unless   => "$buddy_path -c \"Print :${property}\" ${plist_path} 2>&1 | grep \"Does Not Exist\"",
+    unless   => "$buddy_path -c \"Print \\\":${property}\\\"\" ${plist_path} 2>&1 | grep \"Does Not Exist\"",
   }
 
   exec { "Set ${plist_path}-${property}-${cmd_type}-${value}":
-    command  => "$buddy_path -c \"Add :${property} ${cmd_type} ${value}\" ${plist_path}",
+    command  => "$buddy_path -c \"Add \\\":${property}\\\" ${cmd_type} ${value}\" ${plist_path}",
     provider => shell,
     require  => Exec[ "Delete ${plist_path}-${property}" ],
   }
