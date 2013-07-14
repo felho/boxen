@@ -37,4 +37,28 @@ class people::felho::application_settings::transmission {
     type   => 'bool',
     value  => false,
   }
+
+  boxen::osx_defaults { 'Trash original torrent files in Transmission':
+    user   => $::luser,
+    domain => 'org.m0k.transmission',
+    key    => 'DeleteOriginalTorrent',
+    type   => 'bool',
+    value  => true,
+  }
+
+  boxen::osx_defaults { 'Hide the Transmission donate message':
+    user   => $::luser,
+    domain => 'org.m0k.transmission',
+    key    => 'WarningDonate',
+    type   => 'bool',
+    value  => false,
+  }
+
+  boxen::osx_defaults { 'Hide the legal disclaimer':
+    user   => $::luser,
+    domain => 'org.m0k.transmission',
+    key    => 'WarningLegal',
+    type   => 'bool',
+    value  => false,
+  }
 }
