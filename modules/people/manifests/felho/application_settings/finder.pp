@@ -23,7 +23,7 @@ class people::felho::application_settings::finder {
     value  => true,
   }
 
-  boxen::osx_defaults { 'Show status bar':
+  boxen::osx_defaults { 'Finder: show status bar':
     user   => $::luser,
     domain => 'com.apple.finder',
     key    => 'ShowStatusBar',
@@ -31,7 +31,7 @@ class people::felho::application_settings::finder {
     value  => true,
   }
 
-  boxen::osx_defaults { 'Show path bar':
+  boxen::osx_defaults { 'Finder: show path bar':
     user   => $::luser,
     domain => 'com.apple.finder',
     key    => 'ShowPathbar',

@@ -37,7 +37,7 @@ class people::felho::application_settings::safari {
     value  => true,
   }
 
-  boxen::osx_defaults { 'Show status bar':
+  boxen::osx_defaults { 'Safari: show status bar':
     user   => $::luser,
     domain => 'com.apple.Safari',
     key    => 'ShowStatusBar',
@@ -45,7 +45,7 @@ class people::felho::application_settings::safari {
     value  => true,
   }
 
-  boxen::osx_defaults { 'Always show tab bar':
+  boxen::osx_defaults { 'Safari: always show tab bar':
     user   => $::luser,
     domain => 'com.apple.Safari',
     key    => 'AlwaysShowTabBar',
