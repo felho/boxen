@@ -8,4 +8,5 @@ class people::felho::application_settings {
   include people::felho::application_settings::mplayerx
   include people::felho::application_settings::iterm2
   include people::felho::application_settings::finder
+  include people::felho::application_settings::safari
 }
