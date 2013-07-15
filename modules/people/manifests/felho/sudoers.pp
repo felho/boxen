@@ -8,6 +8,16 @@ class people::felho::sudoers {
     type     => 'user_spec',
   }
 
+  sudoers { 'assistive_devices':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      '(ALL) NOPASSWD : /usr/bin/touch /private/var/db/.AccessibilityAPIEnabled',
+      '/bin/rm /private/var/db/.AccessibilityAPIEnabled',
+    ],
+    type     => 'user_spec',
+  }
+
   sudoers { 'computer_name':
     users    => $::boxen_user,
     hosts    => 'ALL',
