@@ -7,4 +7,5 @@ class people::felho::osx_settings {
   include people::felho::osx_settings::screensaver
   include people::felho::osx_settings::appstore
   include people::felho::osx_settings::time_machine
+  include people::felho::osx_settings::miscellaneous
 }
