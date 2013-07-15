@@ -7,4 +7,16 @@ class people::felho::sudoers {
     ],
     type     => 'user_spec',
   }
+
+  sudoers { 'computer_name':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      "(ALL) NOPASSWD : /usr/sbin/scutil --set ComputerName \"${people::felho::computer_name}\"",
+      "/usr/sbin/scutil --set HostName \"${people::felho::computer_name}\"",
+      "/usr/sbin/scutil --set LocalHostName \"${people::felho::computer_name}\"",
+      "/usr/bin/defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string \"${people::felho::computer_name}\"",
+    ],
+    type     => 'user_spec',
+  }
 }

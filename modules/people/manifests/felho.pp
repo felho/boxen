@@ -1,4 +1,6 @@
 class people::felho {
+  $computer_name = "${::luser}mbp"
+
   include people::felho::sudoers
   include people::felho::dotfiles
   include people::felho::git_config
