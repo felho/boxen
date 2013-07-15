@@ -72,12 +72,12 @@ class people::felho::application_settings::finder {
     value  => true,
   }
 
-  boxen::osx_defaults { 'Show hidden files by default':
+  boxen::osx_defaults { 'Don\'t show hidden files by default':
     user   => $::luser,
     domain => 'com.apple.finder',
     key    => 'AppleShowAllFiles',
     type   => 'bool',
-    value  => true,
+    value  => false,
   }
 
   boxen::osx_defaults { 'When performing a search, search the current folder by default':
