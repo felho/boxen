@@ -90,4 +90,20 @@ class people::felho::osx_settings::dock {
     type   => 'int',
     value  => 0,
   }
+
+  boxen::osx_defaults { 'Minimize on double click':
+    user   => $::luser,
+    domain => 'NSGlobalDomain',
+    key    => 'AppleMiniaturizeOnDoubleClick',
+    type   => 'bool',
+    value  => true,
+  }
+
+  boxen::osx_defaults { 'Minimize to application':
+    user   => $::luser,
+    domain => 'com.apple.dock',
+    key    => 'minimize-to-application',
+    type   => 'bool',
+    value  => true,
+  }
 }
