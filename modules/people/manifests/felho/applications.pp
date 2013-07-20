@@ -13,4 +13,5 @@ class people::felho::applications {
   include vlc
   include adobe_reader
   include people::felho::applications::myphonedesktop
+  include people::felho::applications::skitch
 }
