@@ -29,4 +29,14 @@ class people::felho::sudoers {
     ],
     type     => 'user_spec',
   }
+
+  sudoers { 'boot_chime':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      '(ALL) NOPASSWD : /usr/sbin/nvram SystemAudioVolume=%80﻿',
+      '/usr/sbin/nvram -d SystemAudioVolume',
+    ],
+    type     => 'user_spec',
+  }
 }

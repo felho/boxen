@@ -9,4 +9,5 @@ class people::felho::osx_settings {
   include people::felho::osx_settings::time_machine
   include people::felho::osx_settings::miscellaneous
   include people::felho::osx_settings::computer_name
+  include people::felho::osx_settings::disable_boot_chime
 }
