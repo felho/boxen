@@ -16,4 +16,5 @@ class people::felho::applications {
   include people::felho::applications::skitch
   include alfred
   include viscosity
+  include people::felho::applications::battery_time
 }

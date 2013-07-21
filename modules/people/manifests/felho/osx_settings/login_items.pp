@@ -17,4 +17,10 @@ class people::felho::osx_settings::login_items {
      path => '/Applications/Viscosity.app',
      hidden => true,
   }
+
+  osx_login_item { 'Battery Time 2':
+     name => 'Battery Time Remaining',
+     path => '/Applications/Battery Time Remaining.app',
+     hidden => true,
+  }
 }
