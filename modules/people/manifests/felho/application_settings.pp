@@ -11,4 +11,5 @@ class people::felho::application_settings {
   include people::felho::application_settings::safari
   include people::felho::application_settings::twitter
   include people::felho::application_settings::alfred
+  include people::felho::application_settings::itunes
 }
