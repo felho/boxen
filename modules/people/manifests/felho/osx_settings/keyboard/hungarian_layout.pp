@@ -34,13 +34,6 @@ class people::felho::osx_settings::keyboard::hungarian_layout {
     value    => -28675,
   }
 
-  people::felho::plistbuddy { 'Show input menu in menubar':
-    domain   => 'com.apple.systemuiserver',
-    property => 'menuExtras:6',
-    type     => 'string',
-    value    => '/System/Library/CoreServices/Menu Extras/TextInput.menu',
-  }
-
   people::felho::plistbuddy { 'Show character palette in input menu 1':
     plist    => $plist,
     property => 'AppleEnabledInputSources:3:InputSourceKind',
