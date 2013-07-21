@@ -21,4 +21,18 @@ class people::felho::application_settings::iterm2 {
     type     => 'int',
     value    => 2,
   }
+
+  people::felho::plistbuddy { 'Set the size of scrollback lines to zero':
+    domain   => 'com.googlecode.iterm2',
+    property => 'New Bookmarks:0:Scrollback Lines',
+    type     => 'int',
+    value    => 0,
+  }
+
+  people::felho::plistbuddy { 'Enable unlimited scrollback':
+    domain   => 'com.googlecode.iterm2',
+    property => 'New Bookmarks:0:Unlimited Scrollback',
+    type     => 'bool',
+    value    => true,
+  }
 }
