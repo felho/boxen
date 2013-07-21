@@ -14,4 +14,5 @@ class people::felho::applications {
   include adobe_reader
   include people::felho::applications::myphonedesktop
   include people::felho::applications::skitch
+  include alfred
 }
