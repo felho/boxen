@@ -15,4 +15,5 @@ class people::felho::applications {
   include people::felho::applications::myphonedesktop
   include people::felho::applications::skitch
   include alfred
+  include viscosity
 }

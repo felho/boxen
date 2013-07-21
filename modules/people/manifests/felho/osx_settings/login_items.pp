@@ -11,4 +11,10 @@ class people::felho::osx_settings::login_items {
      path => '/Applications/Divvy.app',
      hidden => true,
   }
+
+  osx_login_item { 'Viscosity':
+     name => 'Viscosity',
+     path => '/Applications/Viscosity.app',
+     hidden => true,
+  }
 }
