@@ -27,6 +27,6 @@ class people::felho::osx_settings::login_items {
   osx_login_item { 'BetterTouchTool':
      name => 'BetterTouchTool',
      path => '/Applications/BetterTouchTool.app',
-     hidden => true,
+     hidden => false,
   }
 }
