@@ -1,3 +1,31 @@
+# Felho's Boxen
+
+Currently the following manual activities are needed to recreate my working setup (some of them can be elicited with Boxen), and some later TODOs:
+* Installing Lion
+* Installing the already purchased apps in App Store
+* Installing TrueCrypt (I had problem installing it with Boxen: it requires you to accept a license)
+* Installing Xcode and its command line tools
+* Installing Boxen
+* Installing Charles Proxy (it has the same problem like TrueCrypt) (When I tried to install it with Boxen it required the installation of Java 6 SE Runtime)
+* Assigning mp4 extension to MPlayerX (http://apple.stackexchangecom/questions/20118/can-finder-and-the-open-command-treat-files-with-sh-or-other-typical-extensio/49998#49998, http://superuser.com/questions/273756/how-to-change-default-app-for-all-files-of-particular-file-type-through-terminal)
+* Adding iTerm2 shortcut: Previous tab -> Ctrl-TAB (when I tried to reinstall iTerm2 I had to delete /var/db/.puppet_compressed_app_installed_iTerm)
+* Setting background image
+* Installing ssh keys and VPN connections
+* Acrobat Reader (I had to check this one as it seems finally I was able to install it with Boxen)
+* Android FileTransfer
+* Disabling boot chime (for some reason the same command that works in command line doesn't work through Boxen)
+* Setting Spotlight's shortcut to Alt-Space
+* It seems iTunes's "Show sidebar" and "Show status bar" settings are not stored in a plist file or at least not in a common place
+* BetterTouchTool creates a __MACOSX folder in the Applications directory, and I was unable to use Dropbox as its backend (another problem was that at login item I had to set hidden attribute to false), so the following settings should be set manually:
+** Google Chrome: Three Finger Tap -> Cmd-Click, Four Finger Tap -> Cmd-Shift-Click
+** Twitter: Two Finger Swipe Left -> Left_Arrow
+** PhpStrom: Two Finger Swipe Left -> Alt-Cmd-Left_Arrow
+* Coursera stuffs
+* ATV stuffs
+* In the case of dict osx_defaults_extended creates all values as a string, which can cause problems, for example at Alfred's settings
+* The array-add is not optimal as it adds always the item to the array even if the item alrady exists
+
+
 # Our Boxen
 
 This is a template Boxen project designed for your organization to fork and
