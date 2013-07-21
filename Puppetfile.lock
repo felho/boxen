@@ -139,6 +139,11 @@ GITHUBTARBALL
     osx (1.4.0)
 
 GITHUBTARBALL
+  remote: lucadegasperi/puppet-bettertouchtool
+  specs:
+    bettertouchtool (1.0.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.0.2)
@@ -146,6 +151,7 @@ GITHUBTARBALL
 DEPENDENCIES
   adobe_reader (= 1.0.1)
   alfred (= 1.1.1)
+  bettertouchtool (= 1.0.0)
   boxen (= 2.1.0)
   chrome (= 1.1.0)
   clipmenu (= 1.0.0)

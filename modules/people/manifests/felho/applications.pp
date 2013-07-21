@@ -17,4 +17,5 @@ class people::felho::applications {
   include alfred
   include viscosity
   include people::felho::applications::battery_time
+  include bettertouchtool
 }

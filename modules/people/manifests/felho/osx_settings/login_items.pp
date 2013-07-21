@@ -23,4 +23,10 @@ class people::felho::osx_settings::login_items {
      path => '/Applications/Battery Time Remaining.app',
      hidden => true,
   }
+
+  osx_login_item { 'BetterTouchTool':
+     name => 'BetterTouchTool',
+     path => '/Applications/BetterTouchTool.app',
+     hidden => true,
+  }
 }
