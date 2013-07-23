@@ -24,7 +24,9 @@ Currently the following manual activities are needed to recreate my working setu
 * ATV stuffs
 * In the case of dict osx_defaults_extended creates all values as a string, which can cause problems, for example at Alfred's settings
 * The array-add is not optimal as it adds always the item to the array even if the item alrady exists
-
+* Enabling iTunes Match
+* Installing MS Office
+* Installing hun language tools (http://plastik.hu/podpress_trac/web/21780/0/magyar_angol_nyelvi_20130213.dmg)
 
 # Our Boxen
 
