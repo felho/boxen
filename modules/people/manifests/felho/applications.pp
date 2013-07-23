@@ -13,7 +13,6 @@ class people::felho::applications {
   include vlc
   include adobe_reader
   include people::felho::applications::myphonedesktop
-  include people::felho::applications::skitch
   include alfred
   include viscosity
   include people::felho::applications::battery_time
