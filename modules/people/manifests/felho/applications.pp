@@ -9,7 +9,6 @@ class people::felho::applications {
   include transmission
   include java
   include firefox
-  include mplayerx
   include vlc
   include adobe_reader
   include people::felho::applications::myphonedesktop
