@@ -16,4 +16,5 @@ class people::felho::applications {
   include viscosity
   include people::felho::applications::battery_time
   include people::felho::applications::bettertouchtool
+  include people::felho::applications::clipgrab
 }
