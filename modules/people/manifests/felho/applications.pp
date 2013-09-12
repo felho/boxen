@@ -18,4 +18,5 @@ class people::felho::applications {
   include people::felho::applications::bettertouchtool
   include people::felho::applications::clipgrab
   include handbrake
+  include vagrant
 }

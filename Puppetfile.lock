@@ -119,6 +119,11 @@ GITHUBTARBALL
     transmission (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (2.0.10)
+
+GITHUBTARBALL
   remote: boxen/puppet-viscosity
   specs:
     viscosity (1.0.0)
@@ -177,6 +182,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   teamviewer (= 1.0.1)
   transmission (= 1.0.0)
+  vagrant (= 2.0.10)
   viscosity (= 1.0.0)
   vlc (= 1.0.3)
 
