@@ -19,4 +19,8 @@ class people::felho::applications {
   include people::felho::applications::clipgrab
   include handbrake
   include vagrant
+  include nodejs::v0_10
+  class { 'nodejs::global':
+    version => 'v0.10'
+  }
 }
