@@ -3,4 +3,5 @@ class people::felho::homebrew_packages {
   package { 'wget': }
   package { 'rtmpdump': }
   package { 'ngrep': }
+  package { 'imagemagick': }
 }
