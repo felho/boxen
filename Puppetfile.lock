@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.1.0)
+    boxen (2.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -157,7 +157,7 @@ DEPENDENCIES
   adobe_reader (= 1.0.1)
   alfred (= 1.1.1)
   bettertouchtool (= 1.0.0)
-  boxen (= 2.1.0)
+  boxen (= 2.3.0)
   chrome (= 1.1.0)
   clipmenu (= 1.0.0)
   dnsmasq (= 1.0.0)
