@@ -101,4 +101,12 @@ class people::felho::application_settings::sublime_text_2 {
   sublime_text_2::package { 'Eco':
     source => 'davidjrice/sublime-eco'
   }
+
+  sublime_text_2::package { 'Whitespace':
+    source => 'disq/HighlightWhitespaces'
+  }
+
+  sublime_text_2::package { 'CodeFormatter':
+    source => 'akalongman/sublimetext-codeformatter'
+  }
 }
